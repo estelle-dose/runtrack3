@@ -1,16 +1,28 @@
-function fizzbuzz() {
-    for (var i = 1; i <= 151; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log("FizzBuzz");
-        } else if (i % 3 === 0) {
-            console.log("Fizz");
-        } else if (i % 5 === 0) {
-            console.log("Buzz");
-        } else {
-            console.log(i);
-        }
+function sommenombrespremiers(nombre1, nombre2) {
+    if (estPremier(nombre1) && estPremier(nombre2)) {
+        return nombre1 + nombre2;
+    } else {
+        return false;
     }
 }
 
-// Appel de la fonction fizzbuzz
-fizzbuzz();
+// Fonction pour vérifier si un nombre est premier
+function estPremier(nombre) {
+    if (nombre <= 1) {
+        return false;
+    }
+
+    for (var i = 2; i <= Math.sqrt(nombre); i++) {
+        if (nombre % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+// Exemples d'utilisation de la fonction
+console.log(sommenombrespremiers(5, 7)); // 5 + 7 = 12 (somme de deux nombres premiers)
+console.log(sommenombrespremiers(4, 9)); // false (4 n'est pas premier)
+console.log(sommenombrespremiers(11, 13)); // 11 + 13 = 24 (somme de deux nombres premiers)
+

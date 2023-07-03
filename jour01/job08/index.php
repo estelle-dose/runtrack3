@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ma page</title>
+    <title>Nombres premiers</title>
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
