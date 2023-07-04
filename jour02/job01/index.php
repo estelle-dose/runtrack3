@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Exemple Citation</title>
+  <title>Citation</title>
   <script src="script.js"></script>
 </head>
 <body>
