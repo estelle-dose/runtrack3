@@ -1,0 +1,26 @@
+#rainbow-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-container {
+    margin: 0.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #shuffle-button {
+    margin-top: 10px;
+  }
+  
+  .green {
+    color: green;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  
