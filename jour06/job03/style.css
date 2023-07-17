@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section {
+    background-color: #88c1d0;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+  
+  @media screen and (min-width: 1600px) {
+    .section {
+      width: 100px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
+    .section {
+      width: calc(50% - 10px);
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .section {
+      width: 100%; 
+    }
+  }
+  

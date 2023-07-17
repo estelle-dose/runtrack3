@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    background-color: #88c1d0;
+    height: 20vh;
+    width: 55%;
+    margin: 1%;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .section {
+        width: 55%;
+    }
+}
+
+
+@media screen and (min-width: 768px)  {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .section {
+        width: 45%;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+}
