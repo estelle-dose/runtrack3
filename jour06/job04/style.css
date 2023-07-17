@@ -1,58 +1,75 @@
-/* Styles pour l'en-tête */
-header {
-    background-color: #333;
-    padding: 20px;
-    color: #fff;
-  }
-  
-  /* Styles pour le menu de navigation */
-  .navbar {
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
   }
   
-  .navbar-menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  .section {
+    background-color: #88c1d0;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
   }
   
-  .navbar-menu li {
-    margin-left: 10px;
-  }
-  
-  .navbar-menu li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Styles pour le bouton hamburger */
-  .navbar-toggle {
-    display: none; /* Masquer le bouton par défaut */
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  .toggle-icon {
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: #fff;
-    margin-bottom: 4px;
-  }
-  
-/* Styles pour les résolutions inférieures ou égales à 767px */
-@media (max-width: 767px) {
-    .navbar-menu.show {
-      display: flex; /* Afficher les liens du menu hamburger */
-      flex-direction: column; /* Afficher les liens en colonne */
-    }
-  
-    .navbar-menu li {
-      margin-left: 0; /* Réinitialiser la marge des liens */
+  @media screen and (min-width: 1600px) {
+    .section {
+      width: 100px;
     }
   }
+  
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
+    .section {
+      width: calc(50% - 10px);
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .section {
+      width: 100%;
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    
+    .logo {
+      font-weight: bold;
+    }
+    
+    .menu-toggle {
+      display: none;
+    }
+    
+    .menu-icon {
+      display: block;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    
+    .menu {
+      display: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu li {
+      margin-bottom: 10px;
+    }
+    
+    .menu li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    
+    #menu-toggle:checked + .menu-icon + .menu {
+      display: block;
+    }
+  }
+  
+  
+  
   

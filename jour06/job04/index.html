@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Votre site</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Ma page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" id="navbar-toggle">
-            <span class="toggle-icon"></span>
-            <span class="toggle-icon"></span>
-            <span class="toggle-icon"></span>
-          </button>
-        </div>
-        <ul class="navbar-menu" id="navbar-menu">
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Présentation</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Le reste de votre contenu HTML -->
-
-  <script src="script.js"></script>
+<header>
+  <div class="logo">Logo</div>
+  <input type="checkbox" class="menu-toggle" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  <ul class="menu" id="menu">
+    <li><a href="#">Accueil</a></li>
+    <li><a href="#">Présentation</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</header>
+<div class="container">
+    <section class="section"></section>
+    <section class="section"></section>
+    <section class="section"></section>
+    <section class="section"></section>
+</div>
 </body>
 </html>
+
